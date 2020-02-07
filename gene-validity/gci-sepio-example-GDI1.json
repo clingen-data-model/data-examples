@@ -1,0 +1,371 @@
+{
+    "@context" : 
+    {
+        "id" : "@id",
+        "type" : "@type",
+        "PMID" : "https://www.ncbi.nlm.nih.gov/pubmed/",
+        "CLINVAR" : "https://www.ncbi.nlm.nih.gov/clinvar/variation/",
+        "CA" : "http://reg.genome.network/allele/CA",
+        "source" : "http://purl.org/dc/terms/source",
+        "has_part" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
+        },
+        "has_evidence_level" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000146"
+        },
+        "has_object" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000390"
+        },
+        "has_subject" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000388"
+        },
+        "has_predicate" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000389"
+        },
+        "realizes" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/BFO_0000055"
+        },
+        "qualified_contribution" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000159"
+        },
+        "has_qualifier" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000144"
+        },
+        "has_evidence_line" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000006"
+        },
+        "evidence_direction" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000183"
+        },
+        "is_about_allele" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000275"
+        },
+        "evidence_score_qualifier" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0004063"
+        },
+        "is_causal_germline_mutation_in" : {
+            "@type" : "@id",
+            "@id" : "http://purl.obolibrary.org/obo/RO_0004013"
+        },
+        "label" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "description" : "http://purl.org/dc/terms/description",
+        "is_version_of" : "http://purl.org/dc/terms/isVersionOf",
+        "evidence_strength_score" : "http://purl.obolibrary.org/obo/SEPIO_0004065",
+        "AutosomalRecessiveCaseLevelEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004008",
+        "ApproverRole" : "http://purl.obolibrary.org/obo/SEPIO_0000155",
+        "SegregationEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004012",
+        "ClinicalSegregationEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004036",
+        "GeneExpressionEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004024",
+        "RescueInHumanEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004048",
+        "RescueInPatientCellsEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004051",
+        "AutosomalRecessiveOtherVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004019",
+        "ProteinInteractionEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004023",
+        "AutosomalDominantOtherVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004011",
+        "CellCultureModelEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004047",
+        "AutosomalDominantOtherVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004035",
+        "SegregationCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004059",
+        "CaseControlEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004007",
+        "RescueInCellCultureEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004050",
+        "ModelAndRescueEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004062",
+        "AutosomalDominantNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004010",
+        "FunctionalAlterationEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004014",
+        "GeneValidityEvidenceLevelAssertion" : "http://purl.obolibrary.org/obo/SEPIO_0004002",
+        "AutosomalRecessiveOtherVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004038",
+        "FunctionalAlterationInNonPatientCellsEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004026",
+        "BiochemicalFunctionEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004041",
+        "ExperimentalEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004053",
+        "AutosomalDominantDeNovoVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004009",
+        "ObsoleteManualAssertionProcess" : "http://purl.obolibrary.org/obo/SEPIO_0000055",
+        "GeneValidityProposition" : "http://purl.obolibrary.org/obo/SEPIO_0004001",
+        "FunctionalAlterationInPatientCellsEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004025",
+        "FunctionalEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004013",
+        "RescueInNonHumanModelEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004049",
+        "AutosomalRecessiveDeNovoVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004037",
+        "GeneticEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004052",
+        "CaseControlAggregateStudyEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004040",
+        "AutosomalDominantDeNovoVariantCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004056",
+        "FunctionalAlterationInPatientCellsEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004044",
+        "ModelAndRescueEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004015",
+        "GeneValidityReport" : "http://purl.obolibrary.org/obo/SEPIO_0004004",
+        "CellCultureModelEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004028",
+        "GeneExpressionEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004043",
+        "RescueInCellCultureEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004031",
+        "AutosomalRecessiveCaseLevelCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004055",
+        "GeneValidityEvaluationGuideline" : "http://purl.obolibrary.org/obo/SEPIO_0004003",
+        "NonHumanModelEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004027",
+        "CaseControlSingleStudyEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004039",
+        "NonHumanModelRescueEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004030",
+        "CaseControlEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004054",
+        "ProteinInteractionEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004042",
+        "AutosomalDominantNullVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004034",
+        "BiochemicalFunctionEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004022",
+        "AutosomalDominantOtherVariantCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004058",
+        "NonHumanModelOrganismEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004046",
+        "AutosomalRecessiveNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004018",
+        "ExperimentalEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004006",
+        "FunctionalAlterationEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004061",
+        "CaseControlAggregateEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004021",
+        "FunctionalAlterationInNonPatientCellsEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004045",
+        "AutosomalDominantDeNovoVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004033",
+        "AutosomalDominantNullVariantCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004057",
+        "GeneticEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004005",
+        "HumanModelRescueEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004029",
+        "AutosomalRecessiveDeNovoNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004017",
+        "ProteinFunctionCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004060",
+        "RescueInPatientCellsEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004032",
+        "CaseControlSingleStudyEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004020",
+        "ConflictingEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004509",
+        "Supporting" : "http://purl.obolibrary.org/obo/SEPIO_0000403",
+        "ClinGenFunctionalAlterationEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004075",
+        "Met" : "http://purl.obolibrary.org/obo/SEPIO_0000223",
+        "NoEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004508",
+        "Disputing" : "http://purl.obolibrary.org/obo/SEPIO_0000404",
+        "ClinGenProteinFunctionCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004074",
+        "ClinGenGeneticEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004066",
+        "Inconclusive" : "http://purl.obolibrary.org/obo/SEPIO_0000405",
+        "ClinGenModelAndRescueEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004076",
+        "ClinGenCaseControlEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004068",
+        "StrongEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004505",
+        "ClinGenAutosomalDominantNullVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004071",
+        "HasEvidenceLevel" : "http://purl.obolibrary.org/obo/SEPIO_0000146",
+        "ClinGenExperimentalEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004067",
+        "DefinitiveEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004504",
+        "ClinGenAutosomalDominantDeNovoVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004070",
+        "NotMet" : "http://purl.obolibrary.org/obo/SEPIO_0000226",
+        "LimitedEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004507",
+        "ClinGenSegregationCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004073",
+        "RefutingEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004510",
+        "ClinGenAutosomalRecessiveCaseLevelCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004069",
+        "ModerateEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004506",
+        "ClinGenAutosomalDominantOtherVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004072",
+        "IsCausalGermlineMutationIn" : "http://purl.obolibrary.org/obo/RO_0004013",
+        "GeneValidityPropositionPredicateValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0004501",
+        "GeneValidityEvidenceLevelValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0004503",
+        "GeneValidityEvidenceLevelAssertionPredicateValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0004502",
+        "ClinGenGeneValidityEvaluationGuideline" : "http://purl.obolibrary.org/obo/SEPIO_0004064",
+        "CriterionAssessmentOutcomeValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0000347"
+    },
+    "id" : "CG-GCI:a0a9ec11-ef90-4095-9c9e-696eabd0395b-2019-09-16T16:37:00Z",
+    "is_version_of" : "CG-GCI:a0a9ec11-ef90-4095-9c9e-696eabd0395b",
+    "type" : "GeneValidityReport",
+    "has_part" : [
+        {
+            "type" : "GeneValidityEvidenceLevelAssertion",
+            "has_subject" : {
+                "type" : "GeneValidityProposition",
+                "has_subject" : "HGNC:4226",
+                "has_predicate" : "GeneMutationsCausalFor",
+                "has_object" : "MONDO:0019181",
+            },
+            "has_qualifier" : "HPO:<fixme>",
+            "has_predicate" : "HasEvidenceWithStrength",
+            "has_object" : "Moderate",
+            "qualified_contribution" : [
+                {
+                    "label" : "Intelectual Disability and Autism WG",
+                    "realizes" : "ApproverRole"
+                }
+            ]
+            "evidence_score_qualifier" : 11.6,
+            "has_evidence_line" : [
+                {
+                    "type" : "GeneticEvidenceLine",
+                    "evidence_strength_score" : 9.1,
+                    "has_evidence_item" : [
+                        {
+                        "type" : "GeneticEvidenceCriterionAssessment",
+                        "has_subject" : "ClinGenGeneValidityEvaluationGuideline",
+                        "has_object" : "Met",
+                        "condition_qualifier" : "<fixme> Genetic condition for X",
+                            "has_evidence_line" [
+                                {
+                                    "type" : "ProbandWithGeneticImpactVariantEvidenceLine",
+                                    "evidence_strength_score" : 0.5,
+                                    "description" : "No functional evidence exists for this variant",
+                                    "has_evidence_item" : [
+                                        {
+                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
+                                            "label" : "D'Adamo MRX41 Proband"
+                                            "source" : "PMID:9620768",
+                                            "allele" : "CLINVAR:11626",
+                                            "description" : "This family is described in Hamel et al. 1996 (PMID:8826463); a pedigree can be found in this publication. Intellectual disability (ID) was mild-moderate, non-progressive and evident in the first years of life. Per the authors of that study: \"None of the affected males is institutionalized, but all attended special schools for children with (severe) learning problems. They all live and work in a sheltered environment. There was no consistent clinical phenotype other than the mental retardation. Obvious neurological symptoms and signs were not present. Height, weight, and OFC were all within normal limits. Their behaviour is unremarkable.\" All obligate and possible carriers were said to be of normal intelligence. No particular individual is designated as the proband."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type" : "ProbandWithGeneticImpactVariantEvidenceLine",
+                                    "evidence_strength_score" : 0.1,
+                                    "description" : "No functional evidence exists for this variant."
+                                    "has_evidence_item" : [
+                                        {
+                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
+                                            "label" : "Bienvenu Proband R",
+                                            "description" : "All affected males show moderate-severe intellectual disability (ID). No statural growth deficiency, or minor facial or other abnormal physical features were observed. Seizures present in one affected patient in the family. Proband is individual IV-7; developmental quotient 25 at age 3 years. Clinical assessment, including growth chart, hearing, vision and skin examination was normal. brain magnetic resonance imaging (MRI), electroencephalogram (EEG), biochemical blood and urine screening (thyroid-stimulating hormone, free thyroxine, amino acid chromatography) were normal. Females III-9, III-11 and III-13 have a borderline intellectual functioning or a mild mental retardation and behavioural troubles with psychiatric features and social difficulties.",
+                                            "source" : "PMID:9668174"
+                                            "allele" : "CLINVAR:11628"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type" : "ProbandWithNullVariantEvidenceLine",
+                                    "evidence_strength_score" : 1.5,
+                                    "description" : "DesPortes PMID: 9106537 - provides additional pedigree/linkage information",
+                                    "has_evidence_item" : [
+                                        {
+                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
+                                            "label" : "D'Adamo MRX48 Proband (IV-8)",
+                                            "description" : "This family is described in DesPortes et al. (1997) (PMID: 9106537). Per the authors of that publication, \"all affected males show moderate to severe mental retardation.\"",
+                                            "allele" : "CLINVAR:11627",
+                                            "source" : "PMID:9620768"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type" : "ProbandWithNullVariantEvidenceLine",
+                                    "evidence_strength_score" : 1.5,
+                                    "has_evidence_item" : [
+                                        {
+                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
+                                            "label" : "Strobl-Wilemann Proband 1",
+                                            "description" : "The proband is individual V5; his IQ was 55 at 12 years of age. \"Electroencephalography (EEG) revealed 3/sec spike wave paroxysms.AbrainMRIscan had a normal result. Facial features included a small pointed chin and crowded teeth, but he had no major dysmorphic signs.\"",
+                                            "allele" : "CLINVAR:29933",
+                                            "source" : "PMID:22002931"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type" : "ProbandWithNullVariantEvidenceLine",
+                                    "evidence_strength_score" : 0,
+                                    "description" : "Originally reported in D'Adamo paper",
+                                    "has_evidence_item" : [
+                                        {
+                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
+                                            "label" : "Des Portes Male 1",
+                                            "allele" : "CLINVAR:11627",
+                                            "source" : "PMID:9106537"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type" : "ExperimentalEvidenceLine",
+                    "evidence_strength_score" : 3.5,
+                    "has_evidence_item" : [
+                        {
+                            "type" : "ExperimentialEvidenceCriterionAssessment",
+                            "has_subject" : "ClinGenGeneValidityEvaluationGuideline",
+                            "has_object" : "Met",
+                            "condition_qualifier" : "<fixme> Genetic condition for X",
+                            "has_evidence_line" : [
+                                {
+                                    "type" : "FunctionalAlterationEvidenceLine",
+                                    "evidence_strength_score" : 1,
+                                    "has_evidence_item" [
+                                        {
+                                            "type" : "FunctionalAlterationCriterionAssessment",
+                                            "has_subject" : "ClinGenProteinFunctionCriteria",
+                                            "has_object" : "Met",
+                                            "condition_qualifier" : "<fixme> Genetic condition for x",
+                                            "has_evidence_line" : [
+                                                {
+                                                    "type" : "NonPatientFunctionalAlterationEvidenceLine",
+                                                    "evidence_strength_score" : 0.5,
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "NonPatientFunctionalAlterationEvidenceItem",
+                                                            "label" : "Giannandrea 2010 Protein Interaction",
+                                                            "description" : "Variants were found in RAB39B associated with XLID. GDI1 interacts with RAB39B. Per Bianchi et al. 2012, this \"supports the importance of the intracellular trafficking mediated by the aGDI-RAB GTPase pathway in the development of cognitive function.\"",
+                                                            "source" : "PMID:20159109"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type" : "FunctionalAlterationInNonPatientCellsEvidenceLine",
+                                                    "evidence_strength_score" : 0.5,
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "FunctionalAlterationInNonPatientCellsEvidenceItem",
+                                                            "label" : "Bianchi - Functional Alteration Non-Patient Cells",
+                                                            "description" : "Using electron microscopy and electrophysiology, we now report that lack of aGDI impairs several steps in synaptic vesicle (SV) biogenesis and recycling in the hippocampus",
+                                                            "source" : "PMID:22291894"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type" : "ModelAndRescueEvidenceLine",
+                                    "evidence_strength_score" : 3.5,
+                                    "has_evidence_item" : [
+                                        {
+                                            "has_subject" : "ClinGenModelAndRescueEvidenceCriteria",
+                                            "has_object" : "Met",
+                                            "condition_qualifier" : "<fixme> genetic condition for x",
+                                            "has_evidence_line" : [
+                                                {
+                                                    "type" : "NonHumanModelOrganismEvidenceLine",
+                                                    "evidence_strength_score" : 2,
+                                                    "has_evidence_item" [
+                                                        {
+                                                            "type" : "NonHumanModelOrganismEvidenceItem",
+                                                            "label" : "D'Adamo Models and Rescue - Animal Model" ,
+                                                            "description" : "In mice, as in humans, lack of Gdi1 spares most central nervous system functions and preferentially impairs only a few forebrain functions required to form temporal associations." , 
+                                                            "source", "PMID:9620768"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type" : "CellCultureModelEvidenceLine",
+                                                    "evidence_strength_score" : 0.5,
+                                                    "description" : "These knockout mice showed defects in short-term memory.",
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "CellCultureModelEvidenceItem",
+                                                            "label" : "Cell Culture 1",
+                                                            "description" : "Gdi1-deficient mice are impaired in tasks requiring formation of short-term temporal associations, suggesting a defect in short-term memory. In addition, they show lowered aggression and altered social behavior. In mice, as in humans, lack of Gdi1 spares most central nervous system functions and preferentially impairs only a few forebrain functions required to form temporal associations",
+                                                            "source" : "PMID:9620768"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type" : "NonHumanModelOrganismEvidenceLine",
+                                                    "evidence_direction" : "Disputing",
+                                                    "description" : "ads"
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "NonHumanModelOrganismEvidenceItem",
+                                                            "label" : "Bianchi - Model and Rescue",
+                                                            "description" : "Using electron microscopy and electrophysiology, we now report that lack of aGDI impairs several steps in synaptic vesicle (SV) biogenesis and recycling in the hippocampus",
+                                                            "source" : "PMID:22291894"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                        }
+                    ]
+                    
+                }
+            ]    
+        }
+    ]
+}
