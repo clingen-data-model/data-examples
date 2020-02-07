@@ -157,8 +157,8 @@
         "ClinGenGeneValidityEvaluationGuideline" : "http://purl.obolibrary.org/obo/SEPIO_0004064",
         "CriterionAssessmentOutcomeValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0000347"
     },
-    "id" : "CG-GCI:a0a9ec11-ef90-4095-9c9e-696eabd0395b-2019-09-16T16:37:00Z",
-    "is_version_of" : "CG-GCI:a0a9ec11-ef90-4095-9c9e-696eabd0395b",
+    "id" : "https://clinicalgenome.org/gene-validity/a0a9ec11-ef90-4095-9c9e-696eabd0395b-2019-09-16T16:37:00Z",
+    "is_version_of" : "https://clinicalgenome.org/gene-validity/a0a9ec11-ef90-4095-9c9e-696eabd0395b",
     "type" : "GeneValidityReport",
     "has_part" : [
         {
