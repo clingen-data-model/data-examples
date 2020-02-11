@@ -8,55 +8,59 @@
         "CA" : "http://reg.genome.network/allele/CA",
         "source" : "http://purl.org/dc/terms/source",
         "has_part" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
         },
         "has_evidence_level" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000146"
         },
         "has_object" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000390"
         },
         "has_subject" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000388"
         },
         "has_predicate" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000389"
         },
         "realizes" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/BFO_0000055"
         },
         "qualified_contribution" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000159"
         },
         "has_qualifier" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000144"
         },
+        "has_evidence_item" : {
+            "@type" : "@vocab",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000084"
+        },
         "has_evidence_line" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000006"
         },
         "evidence_direction" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000183"
         },
         "is_about_allele" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000275"
         },
         "evidence_score_qualifier" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0004063"
         },
         "is_causal_germline_mutation_in" : {
-            "@type" : "@id",
+            "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/RO_0004013"
         },
         "label" : "http://www.w3.org/2000/01/rdf-schema#label",
@@ -157,6 +161,7 @@
         "ClinGenGeneValidityEvaluationGuideline" : "http://purl.obolibrary.org/obo/SEPIO_0004064",
         "CriterionAssessmentOutcomeValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0000347"
     },
+
     "id" : "https://clinicalgenome.org/gene-validity/a0a9ec11-ef90-4095-9c9e-696eabd0395b-2019-09-16T16:37:00Z",
     "is_version_of" : "https://clinicalgenome.org/gene-validity/a0a9ec11-ef90-4095-9c9e-696eabd0395b",
     "type" : "GeneValidityReport",
@@ -166,30 +171,29 @@
             "has_subject" : {
                 "type" : "GeneValidityProposition",
                 "has_subject" : "HGNC:4226",
-                "has_predicate" : "GeneMutationsCausalFor",
+                "has_predicate" : "IsCausalGermlineMutationIn",
                 "has_object" : "MONDO:0019181",
+                "has_qualifier" : "HP:00001417"
             },
-            "has_qualifier" : "HPO:<fixme>",
-            "has_predicate" : "HasEvidenceWithStrength",
-            "has_object" : "Moderate",
+            "has_predicate" : "HasEvidenceLevel",
+            "has_object" : "ModerateEvidence",
             "qualified_contribution" : [
                 {
                     "label" : "Intelectual Disability and Autism WG",
                     "realizes" : "ApproverRole"
                 }
-            ]
-            "evidence_score_qualifier" : 11.6,
+            ],
+            "evidence_strength_score" : 11.6,
             "has_evidence_line" : [
                 {
                     "type" : "GeneticEvidenceLine",
                     "evidence_strength_score" : 9.1,
                     "has_evidence_item" : [
                         {
-                        "type" : "GeneticEvidenceCriterionAssessment",
-                        "has_subject" : "ClinGenGeneValidityEvaluationGuideline",
-                        "has_object" : "Met",
-                        "condition_qualifier" : "<fixme> Genetic condition for X",
-                            "has_evidence_line" [
+                            "type" : "GeneticEvidenceCriterionAssessment",
+                            "has_subject" : "ClinGenGeneValidityEvaluationGuideline",
+                            "has_object" : "Met",
+                            "has_evidence_line" : [
                                 {
                                     "type" : "ProbandWithGeneticImpactVariantEvidenceLine",
                                     "evidence_strength_score" : 0.5,
@@ -197,7 +201,7 @@
                                     "has_evidence_item" : [
                                         {
                                             "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
-                                            "label" : "D'Adamo MRX41 Proband"
+                                            "label" : "D'Adamo MRX41 Proband",
                                             "source" : "PMID:9620768",
                                             "allele" : "CLINVAR:11626",
                                             "description" : "This family is described in Hamel et al. 1996 (PMID:8826463); a pedigree can be found in this publication. Intellectual disability (ID) was mild-moderate, non-progressive and evident in the first years of life. Per the authors of that study: \"None of the affected males is institutionalized, but all attended special schools for children with (severe) learning problems. They all live and work in a sheltered environment. There was no consistent clinical phenotype other than the mental retardation. Obvious neurological symptoms and signs were not present. Height, weight, and OFC were all within normal limits. Their behaviour is unremarkable.\" All obligate and possible carriers were said to be of normal intelligence. No particular individual is designated as the proband."
@@ -207,13 +211,13 @@
                                 {
                                     "type" : "ProbandWithGeneticImpactVariantEvidenceLine",
                                     "evidence_strength_score" : 0.1,
-                                    "description" : "No functional evidence exists for this variant."
+                                    "description" : "No functional evidence exists for this variant.",
                                     "has_evidence_item" : [
                                         {
                                             "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
                                             "label" : "Bienvenu Proband R",
                                             "description" : "All affected males show moderate-severe intellectual disability (ID). No statural growth deficiency, or minor facial or other abnormal physical features were observed. Seizures present in one affected patient in the family. Proband is individual IV-7; developmental quotient 25 at age 3 years. Clinical assessment, including growth chart, hearing, vision and skin examination was normal. brain magnetic resonance imaging (MRI), electroencephalogram (EEG), biochemical blood and urine screening (thyroid-stimulating hormone, free thyroxine, amino acid chromatography) were normal. Females III-9, III-11 and III-13 have a borderline intellectual functioning or a mild mental retardation and behavioural troubles with psychiatric features and social difficulties.",
-                                            "source" : "PMID:9668174"
+                                            "source" : "PMID:9668174",
                                             "allele" : "CLINVAR:11628"
                                         }
                                     ]
@@ -270,17 +274,15 @@
                             "type" : "ExperimentialEvidenceCriterionAssessment",
                             "has_subject" : "ClinGenGeneValidityEvaluationGuideline",
                             "has_object" : "Met",
-                            "condition_qualifier" : "<fixme> Genetic condition for X",
                             "has_evidence_line" : [
                                 {
                                     "type" : "FunctionalAlterationEvidenceLine",
                                     "evidence_strength_score" : 1,
-                                    "has_evidence_item" [
+                                    "has_evidence_item" : [
                                         {
                                             "type" : "FunctionalAlterationCriterionAssessment",
                                             "has_subject" : "ClinGenProteinFunctionCriteria",
                                             "has_object" : "Met",
-                                            "condition_qualifier" : "<fixme> Genetic condition for x",
                                             "has_evidence_line" : [
                                                 {
                                                     "type" : "NonPatientFunctionalAlterationEvidenceLine",
@@ -297,6 +299,7 @@
                                                 {
                                                     "type" : "FunctionalAlterationInNonPatientCellsEvidenceLine",
                                                     "evidence_strength_score" : 0.5,
+
                                                     "has_evidence_item" : [
                                                         {
                                                             "type" : "FunctionalAlterationInNonPatientCellsEvidenceItem",
@@ -317,17 +320,16 @@
                                         {
                                             "has_subject" : "ClinGenModelAndRescueEvidenceCriteria",
                                             "has_object" : "Met",
-                                            "condition_qualifier" : "<fixme> genetic condition for x",
                                             "has_evidence_line" : [
                                                 {
                                                     "type" : "NonHumanModelOrganismEvidenceLine",
                                                     "evidence_strength_score" : 2,
-                                                    "has_evidence_item" [
+                                                    "has_evidence_item" : [
                                                         {
                                                             "type" : "NonHumanModelOrganismEvidenceItem",
                                                             "label" : "D'Adamo Models and Rescue - Animal Model" ,
                                                             "description" : "In mice, as in humans, lack of Gdi1 spares most central nervous system functions and preferentially impairs only a few forebrain functions required to form temporal associations." , 
-                                                            "source", "PMID:9620768"
+                                                            "source" : "PMID:9620768"
                                                         }
                                                     ]
                                                 },
@@ -347,7 +349,7 @@
                                                 {
                                                     "type" : "NonHumanModelOrganismEvidenceLine",
                                                     "evidence_direction" : "Disputing",
-                                                    "description" : "ads"
+                                                    "description" : "ads",
                                                     "has_evidence_item" : [
                                                         {
                                                             "type" : "NonHumanModelOrganismEvidenceItem",
@@ -361,9 +363,9 @@
                                         }
                                     ]
                                 }
+                            ]
                         }
                     ]
-                    
                 }
             ]    
         }
