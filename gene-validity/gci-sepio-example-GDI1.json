@@ -11,6 +11,14 @@
             "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
         },
+        "realizes" : {
+            "@type" : "@vocab",
+            "@id" : "http://purl.obolibrary.org/obo/BFO_0000055"
+        },
+        "is_causal_germline_mutation_in" : {
+            "@type" : "@vocab",
+            "@id" : "http://purl.obolibrary.org/obo/RO_0004013"
+        },
         "has_evidence_level" : {
             "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000146"
@@ -19,21 +27,21 @@
             "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000390"
         },
-        "has_subject" : {
-            "@type" : "@vocab",
-            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000388"
-        },
         "has_predicate" : {
             "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000389"
         },
-        "realizes" : {
+        "has_subject" : {
             "@type" : "@vocab",
-            "@id" : "http://purl.obolibrary.org/obo/BFO_0000055"
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000388"
         },
         "qualified_contribution" : {
             "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000159"
+        },
+        "has_evidence_line" : {
+            "@type" : "@vocab",
+            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000006"
         },
         "has_qualifier" : {
             "@type" : "@vocab",
@@ -42,10 +50,6 @@
         "has_evidence_item" : {
             "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000084"
-        },
-        "has_evidence_line" : {
-            "@type" : "@vocab",
-            "@id" : "http://purl.obolibrary.org/obo/SEPIO_0000006"
         },
         "evidence_direction" : {
             "@type" : "@vocab",
@@ -59,34 +63,35 @@
             "@type" : "@vocab",
             "@id" : "http://purl.obolibrary.org/obo/SEPIO_0004063"
         },
-        "is_causal_germline_mutation_in" : {
-            "@type" : "@vocab",
-            "@id" : "http://purl.obolibrary.org/obo/RO_0004013"
-        },
         "label" : "http://www.w3.org/2000/01/rdf-schema#label",
         "description" : "http://purl.org/dc/terms/description",
         "is_version_of" : "http://purl.org/dc/terms/isVersionOf",
+        "evidence_line_strength_score" : "http://purl.obolibrary.org/obo/SEPIO_0000429",
         "evidence_strength_score" : "http://purl.obolibrary.org/obo/SEPIO_0004065",
-        "AutosomalRecessiveCaseLevelEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004008",
+        "AutosomalRecessiveVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004008",
         "ApproverRole" : "http://purl.obolibrary.org/obo/SEPIO_0000155",
         "SegregationEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004012",
-        "ClinicalSegregationEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004036",
+        "SegregationEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004036",
         "GeneExpressionEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004024",
         "RescueInHumanEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004048",
         "RescueInPatientCellsEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004051",
-        "AutosomalRecessiveOtherVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004019",
+        "ClinGenFunctionalAlterationEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004075",
+        "ProbandWithAutosomalRecessiveOtherVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004019",
         "ProteinInteractionEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004023",
         "AutosomalDominantOtherVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004011",
         "CellCultureModelEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004047",
-        "AutosomalDominantOtherVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004035",
+        "ProbandWithOtherVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004035",
         "SegregationCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004059",
         "CaseControlEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004007",
         "RescueInCellCultureEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004050",
-        "ModelAndRescueEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004062",
+        "ClinGenProteinFunctionCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004074",
+        "ModelAndRescueCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004062",
         "AutosomalDominantNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004010",
+        "ProbandWithAutosomalDominantDeNovoVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004078",
+        "ClinGenGeneticEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004066",
         "FunctionalAlterationEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004014",
         "GeneValidityEvidenceLevelAssertion" : "http://purl.obolibrary.org/obo/SEPIO_0004002",
-        "AutosomalRecessiveOtherVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004038",
+        "ProbandWithTwoVariantsAtLeastOneNullEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004038",
         "FunctionalAlterationInNonPatientCellsEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004026",
         "BiochemicalFunctionEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004041",
         "ExperimentalEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004053",
@@ -96,72 +101,71 @@
         "FunctionalAlterationInPatientCellsEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004025",
         "FunctionalEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004013",
         "RescueInNonHumanModelEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004049",
-        "AutosomalRecessiveDeNovoVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004037",
+        "ProbandWithTwoVariantsInTransEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004037",
+        "ProbandWithAutosomalDominantOtherVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004080",
         "GeneticEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004052",
         "CaseControlAggregateStudyEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004040",
+        "ClinGenModelAndRescueEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004076",
+        "ClinGenGeneValidityEvaluationGuideline" : "http://purl.obolibrary.org/obo/SEPIO_0004064",
         "AutosomalDominantDeNovoVariantCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004056",
         "FunctionalAlterationInPatientCellsEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004044",
-        "ModelAndRescueEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004015",
+        "ClinGenCaseControlEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004068",
+        "SegregationStudyEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004016",
         "GeneValidityReport" : "http://purl.obolibrary.org/obo/SEPIO_0004004",
         "CellCultureModelEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004028",
+        "ClinGenAutosomalDominantNullVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004071",
         "GeneExpressionEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004043",
         "RescueInCellCultureEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004031",
-        "AutosomalRecessiveCaseLevelCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004055",
+        "ClinGenExperimentalEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004067",
+        "AutosomalRecessiveVariantCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004055",
         "GeneValidityEvaluationGuideline" : "http://purl.obolibrary.org/obo/SEPIO_0004003",
+        "ProbandWithAutosomalDominantNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004079",
         "NonHumanModelEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004027",
+        "ModelAndRescueEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004015",
         "CaseControlSingleStudyEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004039",
+        "ClinGenAutosomalDominantDeNovoVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004070",
         "NonHumanModelRescueEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004030",
         "CaseControlEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004054",
         "ProteinInteractionEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004042",
-        "AutosomalDominantNullVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004034",
+        "ProbandWithNullVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004034",
         "BiochemicalFunctionEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004022",
         "AutosomalDominantOtherVariantCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004058",
         "NonHumanModelOrganismEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004046",
-        "AutosomalRecessiveNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004018",
+        "ProbandWithAutosomalRecessiveNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004018",
         "ExperimentalEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004006",
-        "FunctionalAlterationEvidenceCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004061",
+        "FunctionalAlterationCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004061",
+        "ClinGenSegregationCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004073",
         "CaseControlAggregateEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004021",
         "FunctionalAlterationInNonPatientCellsEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004045",
-        "AutosomalDominantDeNovoVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004033",
+        "ProbandWithDeNovoVariantEvidenceItem" : "http://purl.obolibrary.org/obo/SEPIO_0004033",
+        "ClinGenAutosomalRecessiveVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004069",
         "AutosomalDominantNullVariantCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004057",
         "GeneticEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004005",
         "HumanModelRescueEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004029",
-        "AutosomalRecessiveDeNovoNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004017",
+        "ProbandWithAutosomalRecessiveDeNovoNullVariantEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004017",
+        "ClinGenAutosomalDominantOtherVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004072",
         "ProteinFunctionCriterionAssessment" : "http://purl.obolibrary.org/obo/SEPIO_0004060",
         "RescueInPatientCellsEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004032",
         "CaseControlSingleStudyEvidenceLine" : "http://purl.obolibrary.org/obo/SEPIO_0004020",
         "ConflictingEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004509",
         "Supporting" : "http://purl.obolibrary.org/obo/SEPIO_0000403",
-        "ClinGenFunctionalAlterationEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004075",
         "Met" : "http://purl.obolibrary.org/obo/SEPIO_0000223",
         "NoEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004508",
         "Disputing" : "http://purl.obolibrary.org/obo/SEPIO_0000404",
-        "ClinGenProteinFunctionCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004074",
-        "ClinGenGeneticEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004066",
         "Inconclusive" : "http://purl.obolibrary.org/obo/SEPIO_0000405",
-        "ClinGenModelAndRescueEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004076",
-        "ClinGenCaseControlEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004068",
         "StrongEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004505",
-        "ClinGenAutosomalDominantNullVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004071",
         "HasEvidenceLevel" : "http://purl.obolibrary.org/obo/SEPIO_0000146",
-        "ClinGenExperimentalEvidenceCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004067",
         "DefinitiveEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004504",
-        "ClinGenAutosomalDominantDeNovoVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004070",
         "NotMet" : "http://purl.obolibrary.org/obo/SEPIO_0000226",
         "LimitedEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004507",
-        "ClinGenSegregationCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004073",
         "RefutingEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004510",
-        "ClinGenAutosomalRecessiveCaseLevelCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004069",
         "ModerateEvidence" : "http://purl.obolibrary.org/obo/SEPIO_0004506",
-        "ClinGenAutosomalDominantOtherVariantCriteria" : "http://purl.obolibrary.org/obo/SEPIO_0004072",
         "IsCausalGermlineMutationIn" : "http://purl.obolibrary.org/obo/RO_0004013",
         "GeneValidityPropositionPredicateValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0004501",
         "GeneValidityEvidenceLevelValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0004503",
         "GeneValidityEvidenceLevelAssertionPredicateValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0004502",
-        "ClinGenGeneValidityEvaluationGuideline" : "http://purl.obolibrary.org/obo/SEPIO_0004064",
         "CriterionAssessmentOutcomeValueSet" : "http://purl.obolibrary.org/obo/SEPIO_0000347"
-    },
-
+    } ,
     "id" : "https://clinicalgenome.org/gene-validity/a0a9ec11-ef90-4095-9c9e-696eabd0395b-2019-09-16T16:37:00Z",
     "is_version_of" : "https://clinicalgenome.org/gene-validity/a0a9ec11-ef90-4095-9c9e-696eabd0395b",
     "type" : "GeneValidityReport",
@@ -179,15 +183,15 @@
             "has_object" : "ModerateEvidence",
             "qualified_contribution" : [
                 {
-                    "label" : "Intelectual Disability and Autism WG",
+                    "label" : "Intellectual Disability and Autism WG",
                     "realizes" : "ApproverRole"
                 }
             ],
-            "evidence_strength_score" : 11.6,
+            "evidence_line_strength_score" : 11.6,
             "has_evidence_line" : [
                 {
                     "type" : "GeneticEvidenceLine",
-                    "evidence_strength_score" : 9.1,
+                    "evidence_line_strength_score" : 9.1,
                     "has_evidence_item" : [
                         {
                             "type" : "GeneticEvidenceCriterionAssessment",
@@ -195,70 +199,116 @@
                             "has_object" : "Met",
                             "has_evidence_line" : [
                                 {
-                                    "type" : "ProbandWithGeneticImpactVariantEvidenceLine",
-                                    "evidence_strength_score" : 0.5,
-                                    "description" : "No functional evidence exists for this variant",
+                                    "type" : "SegregationEvidenceLine",
+                                    "evidence_line_strength_score" : 1.5,
                                     "has_evidence_item" : [
-                                        {
-                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
-                                            "label" : "D'Adamo MRX41 Proband",
-                                            "source" : "PMID:9620768",
-                                            "allele" : "CLINVAR:11626",
-                                            "description" : "This family is described in Hamel et al. 1996 (PMID:8826463); a pedigree can be found in this publication. Intellectual disability (ID) was mild-moderate, non-progressive and evident in the first years of life. Per the authors of that study: \"None of the affected males is institutionalized, but all attended special schools for children with (severe) learning problems. They all live and work in a sheltered environment. There was no consistent clinical phenotype other than the mental retardation. Obvious neurological symptoms and signs were not present. Height, weight, and OFC were all within normal limits. Their behaviour is unremarkable.\" All obligate and possible carriers were said to be of normal intelligence. No particular individual is designated as the proband."
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type" : "ProbandWithGeneticImpactVariantEvidenceLine",
-                                    "evidence_strength_score" : 0.1,
-                                    "description" : "No functional evidence exists for this variant.",
-                                    "has_evidence_item" : [
-                                        {
-                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
-                                            "label" : "Bienvenu Proband R",
-                                            "description" : "All affected males show moderate-severe intellectual disability (ID). No statural growth deficiency, or minor facial or other abnormal physical features were observed. Seizures present in one affected patient in the family. Proband is individual IV-7; developmental quotient 25 at age 3 years. Clinical assessment, including growth chart, hearing, vision and skin examination was normal. brain magnetic resonance imaging (MRI), electroencephalogram (EEG), biochemical blood and urine screening (thyroid-stimulating hormone, free thyroxine, amino acid chromatography) were normal. Females III-9, III-11 and III-13 have a borderline intellectual functioning or a mild mental retardation and behavioural troubles with psychiatric features and social difficulties.",
-                                            "source" : "PMID:9668174",
-                                            "allele" : "CLINVAR:11628"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type" : "ProbandWithNullVariantEvidenceLine",
-                                    "evidence_strength_score" : 1.5,
-                                    "description" : "DesPortes PMID: 9106537 - provides additional pedigree/linkage information",
-                                    "has_evidence_item" : [
-                                        {
-                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
-                                            "label" : "D'Adamo MRX48 Proband (IV-8)",
-                                            "description" : "This family is described in DesPortes et al. (1997) (PMID: 9106537). Per the authors of that publication, \"all affected males show moderate to severe mental retardation.\"",
-                                            "allele" : "CLINVAR:11627",
+                                        { 
+                                            "type" : "SegregationEvidenceItem",
                                             "source" : "PMID:9620768"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type" : "ProbandWithNullVariantEvidenceLine",
-                                    "evidence_strength_score" : 1.5,
-                                    "has_evidence_item" : [
-                                        {
-                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
-                                            "label" : "Strobl-Wilemann Proband 1",
-                                            "description" : "The proband is individual V5; his IQ was 55 at 12 years of age. \"Electroencephalography (EEG) revealed 3/sec spike wave paroxysms.AbrainMRIscan had a normal result. Facial features included a small pointed chin and crowded teeth, but he had no major dysmorphic signs.\"",
-                                            "allele" : "CLINVAR:29933",
+                                        },
+                                        { 
+                                            "type" : "SegregationEvidenceItem",
+                                            "source" : "PMID:9668174"
+                                        },
+                                        { 
+                                            "type" : "SegregationEvidenceItem",
+                                            "source" : "PMID:9620768"
+                                        },
+                                        { 
+                                            "type" : "SegregationEvidenceItem",
                                             "source" : "PMID:22002931"
                                         }
                                     ]
-                                },
+                                }, 
                                 {
-                                    "type" : "ProbandWithNullVariantEvidenceLine",
-                                    "evidence_strength_score" : 0,
-                                    "description" : "Originally reported in D'Adamo paper",
+                                    "type" : "AutosomalDominantOtherVariantEvidenceLine",
+                                    "evidence_line_strength_score" : 0.6,
                                     "has_evidence_item" : [
                                         {
-                                            "type" : "ProbandWithGeneticImpactVariantEvidenceItem",
-                                            "label" : "Des Portes Male 1",
-                                            "allele" : "CLINVAR:11627",
-                                            "source" : "PMID:9106537"
+                                            "type" : "AutosomalDominantOtherVariantCriterionAssessment",
+                                            "has_object" : "Met",
+                                            "has_evidence_line" : [
+                                                {
+                                                    "type" : "ProbandWithAutosomalDominantOtherVariantEvidenceLine",
+                                                    "evidence_line_strength_score" : 0.5,
+                                                    "description" : "No functional evidence exists for this variant",
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "ProbandWithOtherVariantEvidenceItem",
+                                                            "label" : "D'Adamo MRX41 Proband",
+                                                            "source" : "PMID:9620768",
+                                                            "is_about_allele" : "CLINVAR:11626",
+                                                            "description" : "This family is described in Hamel et al. 1996 (PMID:8826463); a pedigree can be found in this publication. Intellectual disability (ID) was mild-moderate, non-progressive and evident in the first years of life. Per the authors of that study: \"None of the affected males is institutionalized, but all attended special schools for children with (severe) learning problems. They all live and work in a sheltered environment. There was no consistent clinical phenotype other than the mental retardation. Obvious neurological symptoms and signs were not present. Height, weight, and OFC were all within normal limits. Their behaviour is unremarkable.\" All obligate and possible carriers were said to be of normal intelligence. No particular individual is designated as the proband."
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type" : "ProbandWithAutosomalDominantOtherVariantEvidenceLine",
+                                                    "evidence_line_strength_score" : 0.1,
+                                                    "description" : "No functional evidence exists for this variant.",
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "ProbandWithOtherVariantEvidenceItem",
+                                                            "label" : "Bienvenu Proband R",
+                                                            "description" : "All affected males show moderate-severe intellectual disability (ID). No statural growth deficiency, or minor facial or other abnormal physical features were observed. Seizures present in one affected patient in the family. Proband is individual IV-7; developmental quotient 25 at age 3 years. Clinical assessment, including growth chart, hearing, vision and skin examination was normal. brain magnetic resonance imaging (MRI), electroencephalogram (EEG), biochemical blood and urine screening (thyroid-stimulating hormone, free thyroxine, amino acid chromatography) were normal. Females III-9, III-11 and III-13 have a borderline intellectual functioning or a mild mental retardation and behavioural troubles with psychiatric features and social difficulties.",
+                                                            "source" : "PMID:9668174",
+                                                            "is_about_allele" : "CLINVAR:11628"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type" : "AutosomalDominantNullVariantEvidenceLine",
+                                    "evidence_line_strength_score" : 3.0,
+                                    "has_evidence_item" : [
+                                        {
+                                            "type" : "AutosomalDominantNullVariantCriterionAssessment",
+                                            "has_object" : "Met",
+                                            "has_evidence_line" : [
+                                                {
+                                                    "type" : "ProbandWithAutosomalDominantNullVariantEvidenceLine",
+                                                    "evidence_line_strength_score" : 1.5,
+                                                    "description" : "DesPortes PMID: 9106537 - provides additional pedigree/linkage information",
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "ProbandWithNullVariantEvidenceItem",
+                                                            "label" : "D'Adamo MRX48 Proband (IV-8)",
+                                                            "description" : "This family is described in DesPortes et al. (1997) (PMID: 9106537). Per the authors of that publication, \"all affected males show moderate to severe mental retardation.\"",
+                                                            "is_about_allele" : "CLINVAR:11627",
+                                                            "source" : "PMID:9620768"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type" :  "ProbandWithAutosomalDominantNullVariantEvidenceLine",
+                                                    "evidence_line_strength_score" : 1.5,
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "ProbandWithNullVariantEvidenceItem",
+                                                            "label" : "Strobl-Wilemann Proband 1",
+                                                            "description" : "The proband is individual V5; his IQ was 55 at 12 years of age. \"Electroencephalography (EEG) revealed 3/sec spike wave paroxysms.AbrainMRIscan had a normal result. Facial features included a small pointed chin and crowded teeth, but he had no major dysmorphic signs.\"",
+                                                            "is_about_allele" : "CLINVAR:29933",
+                                                            "source" : "PMID:22002931"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type" : "ProbandWithAutosomalDominantNullVariantEvidenceLine",
+                                                    "evidence_line_strength_score" : 0,
+                                                    "description" : "Originally reported in D'Adamo paper",
+                                                    "has_evidence_item" : [
+                                                        {
+                                                            "type" : "ProbandWithNullVariantEvidenceItem",
+                                                            "label" : "Des Portes Male 1",
+                                                            "is_about_allele" : "CLINVAR:11627",
+                                                            "source" : "PMID:9106537"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
@@ -268,16 +318,16 @@
                 },
                 {
                     "type" : "ExperimentalEvidenceLine",
-                    "evidence_strength_score" : 3.5,
+                    "evidence_line_strength_score" : 3.5,
                     "has_evidence_item" : [
                         {
-                            "type" : "ExperimentialEvidenceCriterionAssessment",
+                            "type" : "ExperimentalEvidenceCriterionAssessment",
                             "has_subject" : "ClinGenGeneValidityEvaluationGuideline",
                             "has_object" : "Met",
                             "has_evidence_line" : [
                                 {
                                     "type" : "FunctionalAlterationEvidenceLine",
-                                    "evidence_strength_score" : 1,
+                                    "evidence_line_strength_score" : 1,
                                     "has_evidence_item" : [
                                         {
                                             "type" : "FunctionalAlterationCriterionAssessment",
@@ -285,11 +335,11 @@
                                             "has_object" : "Met",
                                             "has_evidence_line" : [
                                                 {
-                                                    "type" : "NonPatientFunctionalAlterationEvidenceLine",
-                                                    "evidence_strength_score" : 0.5,
+                                                    "type" : "FunctionalAlterationInNonPatientCellsEvidenceLine",
+                                                    "evidence_line_strength_score" : 0.5,
                                                     "has_evidence_item" : [
                                                         {
-                                                            "type" : "NonPatientFunctionalAlterationEvidenceItem",
+                                                            "type" : "FunctionalAlterationInNonPatientCellsEvidenceItem",
                                                             "label" : "Giannandrea 2010 Protein Interaction",
                                                             "description" : "Variants were found in RAB39B associated with XLID. GDI1 interacts with RAB39B. Per Bianchi et al. 2012, this \"supports the importance of the intracellular trafficking mediated by the aGDI-RAB GTPase pathway in the development of cognitive function.\"",
                                                             "source" : "PMID:20159109"
@@ -298,7 +348,7 @@
                                                 },
                                                 {
                                                     "type" : "FunctionalAlterationInNonPatientCellsEvidenceLine",
-                                                    "evidence_strength_score" : 0.5,
+                                                    "evidence_line_strength_score" : 0.5,
 
                                                     "has_evidence_item" : [
                                                         {
@@ -315,15 +365,16 @@
                                 },
                                 {
                                     "type" : "ModelAndRescueEvidenceLine",
-                                    "evidence_strength_score" : 3.5,
+                                    "evidence_line_strength_score" : 3.5,
                                     "has_evidence_item" : [
                                         {
+                                            "type" : "ModelAndRescueCriterionAssessment",
                                             "has_subject" : "ClinGenModelAndRescueEvidenceCriteria",
                                             "has_object" : "Met",
                                             "has_evidence_line" : [
                                                 {
-                                                    "type" : "NonHumanModelOrganismEvidenceLine",
-                                                    "evidence_strength_score" : 2,
+                                                    "type" : "NonHumanModelEvidenceLine",
+                                                    "evidence_line_strength_score" : 2,
                                                     "has_evidence_item" : [
                                                         {
                                                             "type" : "NonHumanModelOrganismEvidenceItem",
@@ -335,7 +386,7 @@
                                                 },
                                                 {
                                                     "type" : "CellCultureModelEvidenceLine",
-                                                    "evidence_strength_score" : 0.5,
+                                                    "evidence_line_strength_score" : 0.5,
                                                     "description" : "These knockout mice showed defects in short-term memory.",
                                                     "has_evidence_item" : [
                                                         {
@@ -347,7 +398,7 @@
                                                     ]
                                                 },
                                                 {
-                                                    "type" : "NonHumanModelOrganismEvidenceLine",
+                                                    "type" : "NonHumanModelEvidenceLine",
                                                     "evidence_direction" : "Disputing",
                                                     "description" : "ads",
                                                     "has_evidence_item" : [
